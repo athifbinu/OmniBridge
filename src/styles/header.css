@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:#e6eef5ce ;
+    padding: 0 50px;
+  }
+
+  .logo{
+    display: flex;
+    gap: 14px;
+    margin: 33px;
+    font-size: 11px;
+    
+  }
+  .btn{
+    margin: 50px;
+    display: flex;
+  }
+  .btn button{
+    background-color: rgb(21, 75, 221);
+    color: #fff;
+    background-color: rgb(21, 75, 221);
+    color: #fff;
+    width: 133px;
+    height: 36px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    left: 10px;
+  }
+  .globe-drop{
+    display: flex;
+    width: 83px;
+    height: 33px;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    gap: 5px;
+    margin-left: 27px;
+    cursor: pointer;
+  }
+
+  
