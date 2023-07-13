@@ -108,7 +108,8 @@
   }
   
   .icon{
-    display: none;
+     color: aqua;
+     display: none;
   }
 
   .squre-data{

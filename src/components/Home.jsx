@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/home.css";
 import icon from "../assets/images/download (1).png";
 import icon2 from "../assets/images/download (2).png";
-import { BsLightning } from "react-icons/bs";
+import { BsLightning,BsArrowLeftRight } from "react-icons/bs";
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
 
           <div className="center">
-            {/* <h1 className='icon'></h1> */}
+            <BsArrowLeftRight size={20} className="icon"/>
             <div className="center-section">
               <div className="top-sec">
                 <div className="top-sec-data">
