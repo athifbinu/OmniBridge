@@ -56,6 +56,15 @@
     border-color: rgb(81, 214, 231) transparent transparent transparent;
     border-radius: 5px;
   }
+   .top-sec-data{
+    gap: 7px;
+    margin-top: -43px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+     display: flex;
+   }
   
   .bottom-sec {
     width: 180px;
@@ -65,7 +74,22 @@
     border-right: 50px solid rgb(186, 186, 238);
     border-color:  transparent transparent rgb(186, 186, 238) transparent;
     border-radius: 5px;
+    
   }
+  .bottom-sec-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    color: #fff;
+  
+  }
+
+
+
+  
+
   
   .triangle1 {
     border-left: 60px solid #ceb8b8a9;
