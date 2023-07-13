@@ -22,4 +22,10 @@ body {
     height: 80px;
     border-radius: 5px;
 }
+.mr{
+  margin: 25px;
+}
+.flex{
+  display: flex;
+}
 
