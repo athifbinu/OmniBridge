@@ -16,9 +16,15 @@ const Home = () => {
     <>
       <div className="mane">
       <div className="container-data">
-            <p>From</p>
+             <div className="ln">
+             <p>From</p>
+             <h1>ETH Mainnet</h1>
+             </div>
             <BsArrowLeftRight size={20} className="icon-d"/>
-            <p>To</p>
+             <div className="To">
+             <p>To</p>
+             <h1>Gnois Token On Gc</h1>
+             </div>
         </div>
         <div className="container">
           <div className="left-side">
@@ -52,7 +58,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-
+          
+          <div className="right-mobile">
+                 <p>To</p>
+             <h1>Gnois Token On Gc</h1>
+          </div>
           <div className="right-side">
             <div className="triangle2"></div>
             <div className="square2">

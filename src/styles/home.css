@@ -22,6 +22,9 @@
     margin: 0;
 
   }
+  .container-data p{
+    font-size: 15px;
+  }
   
   .left-side,
   .right-side {
@@ -179,6 +182,12 @@
   .footer-secocial{
     gap: 10px;
   }
+  .To{
+    line-height:24px ;
+  }
+  .right-mobile{
+     display: none;
+  }
 
 
 
@@ -201,7 +210,7 @@
 
     .mane{
         height: auto;
-        margin: 31px;
+        margin: 9px;
     }
     .square1 {
         width: 226px;
@@ -220,8 +229,15 @@
     .icon-d{
       display: none;
     }
-    .container-data{
-
+    .To{
+      display: none;
+    }
+    .right-mobile{
+      display: block;
+      margin-left: 55px;
+    }
+    .right-mobile p{
+      font-size: 15px;
     }
   }
 
