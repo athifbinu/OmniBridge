@@ -22,6 +22,10 @@ const Home = () => {
                 <img src={icon} alt="" />
                 <h2>Gnosis Tocken</h2>
               </div>
+              <div className="squre-num">  
+                <p>0.0</p>
+                <button>Max</button>
+              </div>
             </div>
             <div className="triangle1"></div>
           </div>
@@ -54,6 +58,8 @@ const Home = () => {
                 <img src={icon2} alt="" />
                 <h2>Gnosis Tocken</h2>
               </div>
+                <h1  >0.0</h1>
+            
             </div>
           </div>
         </div>
