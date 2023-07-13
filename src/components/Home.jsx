@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/home.css";
 import icon from "../assets/images/download (1).png";
 import icon2 from "../assets/images/download (2).png";
-import { BsLightning,BsArrowLeftRight } from "react-icons/bs";
+import { BsLightning, BsArrowLeftRight } from "react-icons/bs";
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -15,6 +15,11 @@ const Home = () => {
   return (
     <>
       <div className="mane">
+      <div className="container-data">
+            <p>From</p>
+            <BsArrowLeftRight size={20} className="icon-d"/>
+            <p>To</p>
+        </div>
         <div className="container">
           <div className="left-side">
             <div className="square1">
@@ -22,7 +27,7 @@ const Home = () => {
                 <img src={icon} alt="" />
                 <h2>Gnosis Tocken</h2>
               </div>
-              <div className="squre-num">  
+              <div className="squre-num">
                 <p>0.0</p>
                 <button>Max</button>
               </div>
@@ -31,7 +36,7 @@ const Home = () => {
           </div>
 
           <div className="center">
-            <BsArrowLeftRight size={20} className="icon"/>
+            <BsArrowLeftRight size={20} className="icon" />
             <div className="center-section">
               <div className="top-sec">
                 <div className="top-sec-data">
@@ -39,16 +44,13 @@ const Home = () => {
                   <AiFillLock size={18} />
                 </div>
               </div>
-              <div className="bottom-sec">
-            
-              </div>
+              <div className="bottom-sec"></div>
 
               <div className="bottom-sec-data">
-              <h2 className="mt">Transfer</h2>
-                  <AiOutlineArrowRight size={18} className="mt" />
+                <h2 className="mt">Transfer</h2>
+                <AiOutlineArrowRight size={18} className="mt" />
               </div>
             </div>
-
           </div>
 
           <div className="right-side">
@@ -58,11 +60,12 @@ const Home = () => {
                 <img src={icon2} alt="" />
                 <h2>Gnosis Tocken</h2>
               </div>
-                <h1  >0.0</h1>
-            
+              <h1>0.0</h1>
             </div>
           </div>
         </div>
+
+
 
         <div className="end-data">
           <p>Alternative adress</p>

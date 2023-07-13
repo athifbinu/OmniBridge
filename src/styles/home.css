@@ -4,13 +4,22 @@
     margin: 61px;
     border-radius: 10px;
     height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .container {
     display: flex;
     justify-content: center;
-    padding: 60px;
+    padding: 18px;
+
+  }
+  .container-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+    margin: 0;
 
   }
   
@@ -111,6 +120,9 @@
      color: aqua;
      display: none;
   }
+  .icon-d{
+    color: aqua;
+  }
 
   .squre-data{
     display: flex;
@@ -172,6 +184,7 @@
 
 
 
+
 @media (max-width:800px){
     .container{
       flex-direction: column;
@@ -202,6 +215,12 @@
     }
     .square2 h1{
       margin: 18px;
+    }
+    .icon-d{
+      display: none;
+    }
+    .container-data{
+      
     }
   }
 
