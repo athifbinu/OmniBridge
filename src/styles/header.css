@@ -17,6 +17,7 @@
   .btn{
     
     display: flex;
+    margin-left: 650px;
   }
   .btn button{
     background-color: rgb(21, 75, 221);
@@ -81,6 +82,7 @@
         gap: 1.5rem;
         background-color: #fff;
         transition: 1s;
+        margin-left: auto;
         
      } 
      .responsive_nav{
