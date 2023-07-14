@@ -47,6 +47,11 @@
         color: black;
         font-size: 15px;
   }
+  .globe-drop:hover {
+    cursor: pointer;
+    background-color:#d5e6f5ce ;
+  }
+  
 
   .nav-btn{
     visibility: hidden;
@@ -74,7 +79,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: aqua;
+        background-color: #fff;
         transition: 1s;
         
      } 
