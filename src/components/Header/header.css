@@ -15,9 +15,9 @@
     
   }
   .btn{
-    
     display: flex;
     margin-left: 650px;
+    gap: 10px;
   }
   .btn button{
     background-color: rgb(21, 75, 221);
@@ -33,30 +33,57 @@
     font-size: 14px;
     left: 10px;
     cursor: pointer;
+    
   }
-  .globe-drop{
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 7px;
-    gap: 5px;
-    margin-left: 27px;
-    cursor: pointer;
-  }
-  .globe-drop p{
-        font-weight: bold;
-        color: black;
-        font-size: 15px;
-  }
-  .globe-drop:hover {
-    cursor: pointer;
-    background-color:#d5e6f5ce ;
-  }
-  
 
   .nav-btn{
     visibility: hidden;
   }
+
+
+
+
+
+.select-section{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+
+}
+
+.select-section select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 16px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+
+select:focus {
+  outline: none;
+  background-color: #d5e6f5ce ;
+}
+
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: blue;
+}
+
+
+
+
+
+
+
 
 
   @media (max-width:800px) {

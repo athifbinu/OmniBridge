@@ -34,4 +34,10 @@ body {
 .ln{
   line-height: 24px;
 }
+.hover:hover{
+   background-color: #e6eef5ce;
+}
+.cur{
+   cursor: pointer;
+}
 

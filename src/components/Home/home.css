@@ -132,7 +132,7 @@
     display: flex;
     margin: 10px;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
   }
   .squre-data img{
     width: 30px;
