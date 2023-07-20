@@ -27,7 +27,7 @@ const DiologBox = ({onClose }) => {
                <p>Connect To Your imToken Wallet</p>
           </div>
       </div>
-      <div className="dialog-content hover">
+      <div className="coinbase hover">
           <img src={coinbse} alt="" />
           <h1>Coinbase</h1>
           <p>Scan With Coinbase Wallet to Connect</p>

@@ -126,7 +126,9 @@
   }
   .icon-d{
     color: aqua;
+    cursor: pointer;
   }
+
 
   .squre-data{
     display: flex;
@@ -144,6 +146,24 @@
     font-weight: bold;
     
   }
+  .end-data input{
+    width: 352px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 20px;
+    position: relative;
+}
+.close{
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+  
+
+
+
   .squre-num{
     display: flex;
     margin: 30px;

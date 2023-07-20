@@ -16,13 +16,13 @@ import TokenBox from "../DilogToken/TokenBox";
 
 
 const Home = () => {
-  const [isChangeArrow, setIsChangeArrow] = useState(false);
+ 
   const [showInput, setShowInput] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
-  const handleArrowClick = () => {
-    setIsChangeArrow((prevIsIcon2) => !prevIsIcon2);
-  };
+  const [arrowClicked,setArrowClicked] = useState(false);
+  
+
 
   const handleAddSomethingClick = () => {
     setShowInput(true);
@@ -51,11 +51,14 @@ const Home = () => {
 
 
 
+
+
  
 
   return (
     <>
       <div className="mane">
+            {/* changing */}
         <div className="container-data">
           <div className="ln">
             <p>From</p>
@@ -64,25 +67,26 @@ const Home = () => {
           <BsArrowLeftRight
             size={20}
             className="icon-d"
-            onClick={handleArrowClick}
+             onClick={()=>setArrowClicked(!arrowClicked)}
           />
           <div className="To">
             <p>To</p>
             <h1>Gnois Token On Gc</h1>
           </div>
         </div>
+
+
         <div className="container">
           <div className="left-side">
             <div className="square1">
               <div className="squre-data">
-                {isChangeArrow ? (
+                {arrowClicked ? (
                   <>
                     <img src={icon2}  alt="" />
                     <h2>Gnosis Tocken</h2>
                   </>
                 ) : (
                   <>
-                    {/* this */}
                     <img src={icon}  alt="" />
                     <h2>Gnosis Tocken </h2>
                      <RiArrowDropDownLine size={30} className="cur" onClick={handleOpenDialog}/>
@@ -123,7 +127,7 @@ const Home = () => {
             <div className="triangle2"></div>
             <div className="square2">
               <div className="squre-data">
-                {isChangeArrow ? (
+                {arrowClicked ? (
                   <>
                   {/* this */}
                     <img src={icon} alt="" />
@@ -142,6 +146,7 @@ const Home = () => {
           </div>
         </div>
 
+
         <div className="end-data">
           {showInput ? (
             <div>
@@ -149,8 +154,9 @@ const Home = () => {
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
+                placeholder="Reciptinonist adress"
               />
-              <AiOutlineClose size={18} color="red" onClick={handleInputCloseClick} />
+              <AiOutlineClose className="close" size={18}  onClick={handleInputCloseClick} />
             </div>
           ) : (
             <p onClick={handleAddSomethingClick}>  Alternative adress</p>
