@@ -96,7 +96,7 @@ const Home = () => {
                   </>
                   )}
 
-                  
+
                
               </div>
               <div className="squre-num">
@@ -135,7 +135,6 @@ const Home = () => {
               <div className="squre-data">
                 {arrowClicked ? (
                   <>
-                  {/* this */}
                     <img src={icon} alt="" />
                     <h2>Gnosis Tocken</h2>
                     <RiArrowDropDownLine size={30} className="cur" onClick={handleOpenDialog}/>

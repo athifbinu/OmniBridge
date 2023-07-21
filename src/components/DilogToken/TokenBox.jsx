@@ -30,7 +30,7 @@ const TokenBox = ({ showDialog, handleCloseDialog }) => {
     <div className={`dialog-overlay ${showDialog ? "show" : ""}`}>
 
       <div className="dialog-content">
-      <FaTimes size={18} onClick={handleCloseDialog} />
+      <FaTimes className="cur" size={18} onClick={handleCloseDialog} />
         <div className="dialog-section">
             <div className="serch-section">
             <div className="search">

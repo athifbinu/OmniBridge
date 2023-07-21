@@ -10,6 +10,7 @@ import DiologBox from "../DiologBox/DiologBox";
 const Header = () => {
   const navRef = useRef();
 
+
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
