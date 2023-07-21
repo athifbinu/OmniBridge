@@ -75,3 +75,7 @@
     color: #fff;
     background-color: rgb(21, 75, 221);
   }
+
+  @media (max-width:800px) {
+
+  }

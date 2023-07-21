@@ -286,6 +286,13 @@
     .right-mobile p{
       font-size: 15px;
     }
+    .end-data input{
+      width: auto;
+    }
+    .dropdown-content{
+      width: auto;
+    }
+    
   }
 
 

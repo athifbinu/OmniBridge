@@ -61,3 +61,25 @@
    border-radius: 10px;
    margin: 10px;
 }
+
+
+@media (max-width:800px){
+  .dialog-header{
+    display: block;
+  }
+  .wallet{
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  .imToken{
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  .coinbase{
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+}

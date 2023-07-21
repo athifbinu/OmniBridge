@@ -51,7 +51,7 @@ const Header = () => {
         <FaTimes
           size={20}
           onClick={showNavbar}
-          className="nav-btn nav-close-btn"
+          className="nav-btn nav-close-btn cur"
         />
       </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
         />
       )}
 
-      <AiOutlineMenu size={20} onClick={showNavbar} className="nav-btn" />
+      <AiOutlineMenu size={20} onClick={showNavbar} className="nav-btn cur" />
     </header>
   );
 };

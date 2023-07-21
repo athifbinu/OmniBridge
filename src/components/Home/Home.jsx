@@ -61,7 +61,6 @@ const Home = () => {
   return (
     <>
       <div className="mane">
-            {/* changing */}
         <div className="container-data">
           <div className="ln">
             <p>From</p>
@@ -69,7 +68,7 @@ const Home = () => {
           </div>
           <BsArrowLeftRight
             size={20}
-            className="icon-d"
+            className="icon-d cur"
              onClick={()=>setArrowClicked(!arrowClicked)}
           />
           <div className="To">
@@ -108,7 +107,9 @@ const Home = () => {
           </div>
 
           <div className="center">
-            <BsArrowLeftRight size={20} className="icon" />
+            <BsArrowLeftRight size={20} className="icon cur" 
+               onClick={()=>setArrowClicked(!arrowClicked)}
+            />
             <div className="center-section">
               <div className="top-sec">
                 <div className="top-sec-data">
