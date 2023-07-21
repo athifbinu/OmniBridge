@@ -48,9 +48,11 @@ const Home = () => {
     setShowDialog(false);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
 
-
-
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
 
  
@@ -159,13 +161,32 @@ const Home = () => {
               <AiOutlineClose className="close" size={18}  onClick={handleInputCloseClick} />
             </div>
           ) : (
-            <p onClick={handleAddSomethingClick}>  Alternative adress</p>
+            <p className="cur" onClick={handleAddSomethingClick}>  Alternative adress</p>
           )}
           <br />
           <div className="flex" style={{ justifyContent: "center" }}>
             <BsLightning />
-            <p>Limits</p>
+            <p className="cur" onClick={toggleDropdown}>Limits</p>
           </div>
+             
+          {isOpen && (
+        <div className="dropdown-content">
+               <div className="dropdown-section">
+                <div className="drop-left">
+                <p>Daily Limit</p>
+                 <p>Max per Tx</p>
+                 <p>Min Per TX</p>
+                </div>
+                <div className="drop-right">
+                <p>{"@@"}</p>
+                <p>1 GB GNO</p>
+                <p>0.000000000001 GNO</p>
+                </div>
+
+               </div>
+        </div>
+         )}
+
         </div>
 
    

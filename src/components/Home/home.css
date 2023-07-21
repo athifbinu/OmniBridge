@@ -36,8 +36,8 @@
     width: 400px;
     height: 150px;
     border-radius: 6px 0px 0px 6px;
-    border: solid rgba(187, 183, 183, 0.425);
-    
+    border: solid #c7c3c3;
+    background-color: #c7c3c3;
   }
   
   .square2 {
@@ -209,6 +209,34 @@
      display: none;
   }
 
+  .dropdown-content {
+   background-color: #fff;
+   width: 357px;
+   margin: auto;
+   border-radius: 4px;
+   box-shadow: 10px  #fff;
+  }
+  .dropdown-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 11px;
+    line-height: 26px;
+ 
+  }
+  .drop-left{
+    color: #b9b9b993;
+    font-size: 13px;
+  }
+  .drop-right{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+
+
+
+  
 
 
 
