@@ -1,4 +1,3 @@
-
 import icon1 from "../images/1027.png"
 import icon2 from "../images/1inch-token.webp"
 import icon3 from "../images/AAVE.webp"
@@ -12,6 +11,7 @@ import icon10 from "../images/aergo.webp"
 
 
 
+
 export const dataArray=[
     {
         id:1,
@@ -22,59 +22,58 @@ export const dataArray=[
     {
         id:2,
         img:icon2,
-        first:"1Inc",
-        last:"1Inch"
+        first:"STC",
+        last:"STC"
     },
     {
         id:3,
         img:icon3,
-        first:"ETH",
-        last:"Ether"
+        first:"MRP",
+        last:"MRP"
     },
     {
         id:4,
         img:icon4,
-        first:"ISo",
-        last:"Ether"
+        first:"ISO",
+        last:"ISO"
     },
     {
         id:5,
         img:icon5,
-        first:"ETH",
-        last:"Ether"
+        first:"APPLE",
+        last:"APPLE"
     },
     {
         id:6,
         img:icon6,
-        first:"ETH",
-        last:"Ether"
+        first:"FAD",
+        last:"FAD"
     },
     {
         id:7,
         img:icon7,
-        first:"ETH",
-        last:"Ether"
+        first:"CRI",
+        last:"CRI"
     },
     {
         id:8,
         img:icon8,
-        first:"ETH",
-        last:"Ether"
+        first:"BSF",
+        last:"BSF"
     },
     {
         id:9,
         img:icon9,
-        first:"ETH",
-        last:"Ether"
+        first:"KSRTC",
+        last:"KSRTC"
     }
     ,
     {
         id:10,
         img:icon10,
-        first:"ETH",
-        last:"Ether"
+        first:"BPL",
+        last:"BPL"
     }
 
 
 ]
-

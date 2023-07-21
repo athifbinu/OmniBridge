@@ -22,9 +22,10 @@ const TokenBox = ({ showDialog, handleCloseDialog }) => {
    }
 
 
-   console.log(dataArray)
+   //serach
 
-
+   const [query,setQuery]=useState("")
+  //  console.log(dataArray.filter(data=>data.first.toLowerCase().includes("KSRTC")))
 
   return (
     <div className={`dialog-overlay ${showDialog ? "show" : ""}`}>
@@ -48,13 +49,13 @@ const TokenBox = ({ showDialog, handleCloseDialog }) => {
         </div>
 
         <div className="search-box">
-        <input type="text" placeholder="Search" />
+        <input onChange={e=>setQuery(e.target.value)}  type="text" placeholder="Search" />
         </div>
 
         {/* scrolsection */}
 
         {
-         dataArray.map((data)=>(
+         dataArray.filter(data=>data.first.toLowerCase().includes(query)).map((data)=>(
 
             <div key={data.id} className="coin-section">  
             <div className="left">
@@ -74,9 +75,6 @@ const TokenBox = ({ showDialog, handleCloseDialog }) => {
 
 
       <CustomDiolog showDilogbox={showDilogbox} CloseDialog={CloseDialog} />
-
-
-
 
     </div>
 
