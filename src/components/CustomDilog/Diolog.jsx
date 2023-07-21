@@ -7,8 +7,8 @@ const Diolog = ({ showDilogbox, CloseDialog }) => {
 
   return (
     <div className={`dialog-overlay ${showDilogbox ? "show" : ""}`}>
-    <FaTimes size={18} className="close-btn" onClick={CloseDialog} />
     <div className="dialog-content">
+    <FaTimes size={18} className="close-btn" onClick={CloseDialog} />
      <div className="token-section">
          <div className="token-dta">
             <h1>Add Custom Token</h1>

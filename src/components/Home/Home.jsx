@@ -15,6 +15,7 @@ import {RiArrowDropDownLine} from "react-icons/ri"
 import TokenBox from "../DilogToken/TokenBox";
 
 
+
 const Home = () => {
  
   const [showInput, setShowInput] = useState(false);
@@ -93,7 +94,10 @@ const Home = () => {
                     <h2>Gnosis Tocken </h2>
                      <RiArrowDropDownLine size={30} className="cur" onClick={handleOpenDialog}/>
                   </>
-                )}
+                  )}
+
+                  
+               
               </div>
               <div className="squre-num">
                 <p>0.0</p>
