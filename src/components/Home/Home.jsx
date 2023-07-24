@@ -11,19 +11,14 @@ import {
   AiOutlineClose,
 } from "react-icons/ai";
 import { BiLogoTelegram } from "react-icons/bi";
-import {RiArrowDropDownLine} from "react-icons/ri"
+import { RiArrowDropDownLine } from "react-icons/ri";
 import TokenBox from "../DilogToken/TokenBox";
 
-
-
 const Home = () => {
- 
   const [showInput, setShowInput] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
-  const [arrowClicked,setArrowClicked] = useState(false);
-  
-
+  const [arrowClicked, setArrowClicked] = useState(false);
 
   const handleAddSomethingClick = () => {
     setShowInput(true);
@@ -37,7 +32,6 @@ const Home = () => {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-
 
   const [showDialog, setShowDialog] = useState(false);
 
@@ -55,9 +49,6 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-
- 
-
   return (
     <>
       <div className="mane">
@@ -69,7 +60,7 @@ const Home = () => {
           <BsArrowLeftRight
             size={20}
             className="icon-d cur"
-             onClick={()=>setArrowClicked(!arrowClicked)}
+            onClick={() => setArrowClicked(!arrowClicked)}
           />
           <div className="To">
             <p>To</p>
@@ -77,26 +68,26 @@ const Home = () => {
           </div>
         </div>
 
-
         <div className="container">
           <div className="left-side">
             <div className="square1">
               <div className="squre-data">
                 {arrowClicked ? (
                   <>
-                    <img src={icon2}  alt="" />
+                    <img src={icon2} alt="" />
                     <h2>Gnosis Tocken</h2>
                   </>
                 ) : (
                   <>
-                    <img src={icon}  alt="" />
+                    <img src={icon} alt="" />
                     <h2>Gnosis Tocken </h2>
-                     <RiArrowDropDownLine size={30} className="cur" onClick={handleOpenDialog}/>
+                    <RiArrowDropDownLine
+                      size={30}
+                      className="cur"
+                      onClick={handleOpenDialog}
+                    />
                   </>
-                  )}
-
-
-               
+                )}
               </div>
               <div className="squre-num">
                 <p>0.0</p>
@@ -107,8 +98,10 @@ const Home = () => {
           </div>
 
           <div className="center">
-            <BsArrowLeftRight size={20} className="icon cur" 
-               onClick={()=>setArrowClicked(!arrowClicked)}
+            <BsArrowLeftRight
+              size={20}
+              className="icon cur"
+              onClick={() => setArrowClicked(!arrowClicked)}
             />
             <div className="center-section">
               <div className="top-sec">
@@ -138,7 +131,11 @@ const Home = () => {
                   <>
                     <img src={icon} alt="" />
                     <h2>Gnosis Tocken</h2>
-                    <RiArrowDropDownLine size={30} className="cur" onClick={handleOpenDialog}/>
+                    <RiArrowDropDownLine
+                      size={30}
+                      className="cur"
+                      onClick={handleOpenDialog}
+                    />
                   </>
                 ) : (
                   <>
@@ -152,7 +149,6 @@ const Home = () => {
           </div>
         </div>
 
-
         <div className="end-data">
           {showInput ? (
             <div>
@@ -162,38 +158,43 @@ const Home = () => {
                 onChange={handleInputChange}
                 placeholder="Reciptinonist adress"
               />
-              <AiOutlineClose className="close" size={18}  onClick={handleInputCloseClick} />
+              <AiOutlineClose
+                className="close primarycl"
+                size={18}
+                onClick={handleInputCloseClick}
+              />
             </div>
           ) : (
-            <p className="cur" onClick={handleAddSomethingClick}>  Alternative adress</p>
+            <p className="cur" onClick={handleAddSomethingClick}>
+              {" "}
+              Alternative Adress
+            </p>
           )}
           <br />
           <div className="flex" style={{ justifyContent: "center" }}>
             <BsLightning />
-            <p className="cur" onClick={toggleDropdown}>Limits</p>
+            <p className="cur" onClick={toggleDropdown}>
+              Limits
+            </p>
           </div>
-             
+
           {isOpen && (
-        <div className="dropdown-content">
-               <div className="dropdown-section">
+            <div className="dropdown-content">
+              <div className="dropdown-section">
                 <div className="drop-left">
-                <p>Daily Limit</p>
-                 <p>Max per Tx</p>
-                 <p>Min Per TX</p>
+                  <p>Daily Limit</p>
+                  <p>Max per Tx</p>
+                  <p>Min Per TX</p>
                 </div>
                 <div className="drop-right">
-                <p>{"@@"}</p>
-                <p>1 GB GNO</p>
-                <p>0.000000000001 GNO</p>
+                  <p>{"@@"}</p>
+                  <p>1 GB GNO</p>
+                  <p>0.000000000001 GNO</p>
                 </div>
-
-               </div>
+              </div>
+            </div>
+          )}
         </div>
-         )}
-
-        </div>
-
-   
       </div>
 
       <div className="footer-section">
@@ -209,14 +210,7 @@ const Home = () => {
       </div>
 
       <TokenBox showDialog={showDialog} handleCloseDialog={handleCloseDialog} />
-    
-
-
-
-
     </>
-
-    
   );
 };
 

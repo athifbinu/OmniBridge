@@ -18,7 +18,6 @@
   text-align: center;
   line-height: 38px;
   cursor: pointer;
-  
 }
 
 .dialog-header {
@@ -26,58 +25,53 @@
   justify-content: space-between;
   margin: 10px;
 }
-.dialog-box img{
+.dialog-box img {
   width: 30px;
   height: 30px;
 }
-.dialog-box p{
+.dialog-box p {
   font-size: 14px;
-  color:  #d5e6f5ce;
+  color: #d5e6f5ce;
 }
 
-
-
-.wallet{
-   width: 300px;
-   height: 200px;
+.wallet {
+  width: 300px;
+  height: 200px;
   justify-content: center;
-   padding: 40px;
-   border-radius: 10px;
-   
-}
-
-.imToken{
-   width: 300px;
-   height: 200px;
   padding: 40px;
   border-radius: 10px;
 }
 
-
-.coinbase{
-   width: 300px;
-   height: 200px;
-   padding: 40px;
-   border-radius: 10px;
-   margin: 10px;
+.imToken {
+  width: 300px;
+  height: 200px;
+  padding: 40px;
+  border-radius: 10px;
 }
 
+.coinbase {
+  width: 300px;
+  height: 200px;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10px;
+}
 
-@media (max-width:800px){
-  .dialog-header{
+@media (max-width: 800px) {
+  .dialog-header {
     display: block;
   }
-  .wallet{
+  .wallet {
     width: auto;
     height: auto;
     padding: 0;
   }
-  .imToken{
+  .imToken {
     width: auto;
     height: auto;
     padding: 0;
   }
-  .coinbase{
+  .coinbase {
     width: auto;
     height: auto;
     padding: 0;

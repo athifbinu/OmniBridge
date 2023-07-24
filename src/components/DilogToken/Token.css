@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-
-
-
-
 .dialog-overlay.show {
   display: flex;
 }
@@ -30,23 +26,22 @@
   width: 420px;
   height: 420px;
 }
-.dialog-section{
+.dialog-section {
   margin: 10px;
-
 }
-.serch-section{
+.serch-section {
   display: flex;
   justify-content: space-between;
 }
 
-.search{
+.search {
   line-height: 27px;
 }
 
-.search p{
-     font-size: 14px;
+.search p {
+  font-size: 14px;
 }
-.search-box input{
+.search-box input {
   border-radius: 5px;
   width: 400px;
   height: 41px;
@@ -54,47 +49,42 @@
   margin: 10px;
   padding: 11px;
 }
-.add-section{
+.add-section {
   display: flex;
   font-size: 14px;
   color: rgb(37, 197, 236);
-
 }
-
-
 
 /* scrolsection */
 
-.coin-section{
-   display: flex;
-    margin: 9px;
-    align-items: center;
-    gap: 13px;
-    padding: 9px;
-    border-radius: 6px;
-    border: 1px solid gray;
-
+.coin-section {
+  display: flex;
+  margin: 9px;
+  align-items: center;
+  gap: 13px;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid gray;
 }
 
-.coin-section:Hover{
-  background-color:#aaaaaa;
+.coin-section:hover {
+  background-color: #aaaaaa;
 }
 
-.right{
+.right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-
-.left img{
-     width: 20px;
-     height: 20px;
+.left img {
+  width: 20px;
+  height: 20px;
 }
 
-@media(max-width:800px){
-  .search-box input{
+@media (max-width: 800px) {
+  .search-box input {
     height: auto;
     width: auto;
   }

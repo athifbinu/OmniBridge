@@ -10,7 +10,6 @@ import DiologBox from "../DiologBox/DiologBox";
 const Header = () => {
   const navRef = useRef();
 
-
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
@@ -25,9 +24,6 @@ const Header = () => {
     setIsOpen(false);
   };
 
-
-
-
   return (
     <header className="header">
       <div className="logo">
@@ -39,14 +35,14 @@ const Header = () => {
         <button onClick={openDialog}>Connect Wallet</button>
 
         <div class="select-section">
-        <div>
-        <BsGlobe className="custom-arrow" size={18}/>
-        </div>
-        <select>
+          <div>
+            <BsGlobe className="custom-arrow" size={18} />
+          </div>
+          <select>
             <option value="ETH">ETH{"<=>"}GC</option>
             <option value="GC">BSC{"<=>"}GC</option>
-        </select>
-       </div>
+          </select>
+        </div>
 
         <FaTimes
           size={20}
@@ -55,11 +51,7 @@ const Header = () => {
         />
       </div>
 
-      {isOpen && (
-        <DiologBox
-          onClose={closeDialog}
-        />
-      )}
+      {isOpen && <DiologBox onClose={closeDialog} />}
 
       <AiOutlineMenu size={20} onClick={showNavbar} className="nav-btn cur" />
     </header>
