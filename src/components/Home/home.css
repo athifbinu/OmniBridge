@@ -33,8 +33,8 @@
   width: 400px;
   height: 150px;
   border-radius: 6px 0px 0px 6px;
-  border: solid #c7c3c3;
-  background-color: #c7c3c3;
+  border: 1px solid #c7c3c3;
+  background-color: #fff;
 }
 
 .square2 {
@@ -93,10 +93,12 @@
 }
 
 .triangle1 {
-  border-left: 60px solid #c7c3c3;
+  border-left: 60px solid #e6eef5ce;
   border-right: 0px solid transparent;
   border-bottom: 75px solid transparent;
   border-top: 75px solid transparent;
+  
+  
 }
 
 .triangle2 {
